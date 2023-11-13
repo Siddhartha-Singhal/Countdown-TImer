@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div id="overlay"></div>
+
+<div id="dialog-box">
+  <label for="date">Enter Date (dd/mm/yyyy): </label>
+  <input type="text" id="date" required>
+  <br>
+  <label for="time">Enter Time (hh:mm:ss): </label>
+  <input type="text" id="time" required>
+  <br>
+  <button onclick="setCountdown()">Set Countdown</button>
+</div>
+
+<div id="countdown-container">
+  <div id="countdown-heading">COUNTDOWN TIMER</div>
+  <div id="countdown"></div>
+  <button onclick="openDialog()">Set Countdown</button>
+</div>
+
+<script src="./index.js" charset="UTF-8"></script>
+
+</body>
+</html>
